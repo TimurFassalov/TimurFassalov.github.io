@@ -3,6 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Фассалов Тимур - Веб разработчик</title>
 </head>
 
@@ -32,62 +34,61 @@
             <h4>Веб разработчик</h4>
             <input type="submit" value="Обо мне">
             <input type="submit" value="Мои работы">
-            <img src="img/random_man.png" alt="">
         </div>
     </div>
 
     <!-- Обо мне -->
     <div>
-        <h2>Обо мне</h2>
-        <img src="img/titleLine.png" alt="">
-        <img src="img/random_man_bw.png" alt="">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sapiente est nostrum debitis odio, suscipit fugiat porro, architecto adipisci dignissimos sunt et, ipsam ipsum velit. Vitae pariatur earum repudiandae corrupti.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsam, odio eligendi in placeat aperiam natus aspernatur sunt iusto ducimus!</p>
-        <input type="submit" value="Скачать резюме">
+        <h2 class="about_me">Обо мне</h2>
+        <div class="about_me_line"></div>
+        <div class="about_me_BWpic"></div>
+        <p class="about_me_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sapiente est nostrum debitis odio, suscipit fugiat porro, architecto adipisci dignissimos sunt et, ipsam ipsum velit. Vitae pariatur earum repudiandae corrupti.</p>
+        <p class="about_me_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsam, odio eligendi in placeat aperiam natus aspernatur sunt iusto ducimus!</p>
+        <div class="about_me_download">
+            <input type="submit" value="Скачать резюме">
+        </div>
     </div>
 
     <!-- Что я умею -->
-    <div>
+    <div class="what_i_can">
         <h2>Что я умею</h2>
-        <img src="img/titleLine.png" alt="">
-        <div>
-            <img src="img/laptop.png" alt="">
+        <div class="what_i_can_line"></div>
+        <div class="laptop">
             <h3>Веб-дизайн</h3>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat.</div>
         </div>
-        <div>
-            <img src="img/staples.png" alt="">
+        <div class="staples">
             <h3>Разработка</h3>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat.</div>
         </div>
-        <div>
-            <img src="img/rocket.png" alt="">
+        <div class="rocket">
             <h3>CEO-Оптимизация</h3>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat.</div>
         </div>
-        <div>
-            <img src="img/loudspeaker.png" alt="">
+        <div class="loudspeaker">
             <h3>Маркетинг</h3>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat.</div>
         </div>
     </div>
 
     <!-- Кейсы -->
-    <div>
+    <div class="cases">
         <h2>Кейсы</h2>
-        <img src="img/titleLine.png" alt="">
+        <div class="cases_line"></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolores, quo saepe a id cum.</p>
-        <img src="img/cases.png" alt="">
-        <div>
-            <div>
-                <h3>CLINT</h3>
+        <div class="casesPNG"></div>
+        <div class="advertising">
+            <div class="company">
+                <h3>CLIENT</h3>
                 <p>Какая-то кампания</p>
                 <h3>WEBSITE</h3>
-                <a href="">http://www.somedomain.com</a>
+                <div class="web_site">
+                    <a href="">http://www.somedomain.com</a>
+                </div>
                 <br>
                 <input type="submit" value="VISIT LIVE SITE">
             </div>
-            <div>
+            <div class="project">
                 <h2>Название проекта</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe repellat eaque totam, architecto delectus ipsum perspiciatis doloribus assumenda beatae modi voluptate, deleniti magni excepturi. Fuga, nobis quis saepe quam consectetur!</p>
             </div>
@@ -95,100 +96,91 @@
     </div>
 
     <!-- Рачёт стоимости -->
-    <div>
+    <div class="prices">
         <h2>Рачёт стоимости</h2>
-        <h3>Тип сайта</h3>
-        <select name="" id="">
-            <option value="option1">Визитка</option>
-            <option value="option2">Корпоративный</option>
-        </select>
-        <h3>Дизайн</h3>
-        <select name="" id="">
-            <option value="option1">Минимализм</option>
-            <option value="option2">Красивая топографика</option>
-        </select>
-        <h3>Адаптивность</h3>
-        <select name="" id="">
-            <option value="option1">Присутствует</option>
-            <option value="option2">Отсутствует</option>
-        </select>
-        <img src="img/subtotalLine.png" alt="">
-        <br>
-        <span>Сроки</span>
-        <input type="number">
-        <br>
-        <span>Стоимость</span>
-        <input type="number">
+        <div>
+            <h3>Тип сайта</h3>
+            <select name="" id="">
+                <option value="option1">Визитка</option>
+                <option value="option2">Корпоративный</option>
+            </select>
+            <h3>Дизайн</h3>
+            <select name="" id="">
+                <option value="option1">Минимализм</option>
+                <option value="option2">Красивая топографика</option>
+            </select>
+            <h3>Адаптивность</h3>
+            <select name="" id="">
+                <option value="option1">Присутствует</option>
+                <option value="option2">Отсутствует</option>
+            </select>
+            <div class="subtotal_line"></div>
+            <br>
+            <div>
+                <span>Сроки</span>
+                <input type="number" placeholder="0">
+            </div>
+            <br>
+            <div class="cost">
+                <span>Стоимость</span>
+                <input type="number" placeholder="0">
+            </div>
+        </div>
     </div>
 
     <!-- Немного статистики -->
-    <div>
+    <div class="statistic">
         <h2>Немного статистики</h2>
-        <img src="img/titleLine.png" alt="">
-        <div>
-            <img src="img/smile.png" alt="">
+        <div class="smile">
             <h3>120</h3>
             <div>Счастливых клиентов</div>
         </div>
-        <div>
-            <img src="img/orangeStaples.png" alt="">
+        <div class="orange_staples">
             <h3>4600</h3>
             <div>Часов работы</div>
         </div>
-        <div>
-            <img src="img/checkMark.png" alt="">
+        <div class="check_mark">
             <h3>340</h3>
             <div>Проектов завершено</div>
         </div>
-        <div>
-            <img src="img/cup.png" alt="">
+        <div class="cup">
             <h3>23</h3>
             <div>Наград получено</div>
         </div>
     </div>
 
     <!-- Отзывы -->
-    <div>
+    <div class="feedback">
         <h2>Отзывы</h2>
-        <img src="img/titleLine.png" alt="">
-        <img src="img/smileMan.png" alt="">
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi inventore reprehenderit dolores ipsa. Rem reiciendis, debitis quod veniam illum maxime? Nesciunt vel maxime totam.</div>
-        <div><b>Михаил, </b>Ген директор ПАО "Газпром".</div>
+        <div class="smile_man"></div>
+        <div class="feedback_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi inventore reprehenderit dolores ipsa. Rem reiciendis, debitis quod veniam illum maxime? Nesciunt vel maxime totam.</div>
+        <div class="source"><b>Михаил, </b>Ген директор ПАО "Газпром".</div>
     </div>
 
     <!-- Мои контакты -->
-    <div>
+    <div class="contacts">
         <h2>Мои контакты</h2>
-        <img src="img/titleLine.png" alt="">
-        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ex fugiat alias aspernatur cumque rem, vitae, et quis natus facere!</div>
-        <div>
-            <img src="img/GEOmark.png" alt="">
-            <div>Санкт-Петербург<br>Невский проспект 11</div>
+        <div class="under_contacts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ex fugiat alias aspernatur cumque rem, vitae, et quis natus facere!</div>
+        <div class="connect">
+            <div class="GEOmark">
+                <div>Нижневартовск<br>ул. Мира</div>
+            </div>
+            <div class="envelope">
+                <div>fassalovtimur@gmail.com</div>
+            </div>
+            <div class="phone">
+                <div>+7 999 999-99-99</div>
+            </div>
         </div>
-        <div>
-            <img src="img/envelope.png" alt="">
-            <div>fassalovtimur@gmail.com</div>
+        <div class="message">
+            <h3>Оставь мне своё сообщение</h3>
+            <input type="text" placeholder="Имя" class="send_name">
+            <input type="text" placeholder="Email" class="send_email">
+            <br>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение"></textarea>
+            <br>
+            <input type="submit" placeholder="Отправить" class="send">
         </div>
-        <div>
-            <img src="img/phone.png" alt="">
-            <div>+7 999 999-99-99</div>
-        </div>
-        <h3>Оставь мне своё сообщение</h3>
-        <input type="text" placeholder="Имя">
-        <input type="text" placeholder="Email">
-        <br>
-        <textarea name="" id="" cols="30" rows="10" placeholder="Сообщение">
-
-        </textarea>
-        <br>
-        <input type="submit" placeholder="Отправить">
-        <br>
-        <img src="img/facebook.png" alt="">
-        <img src="img/twitter.png" alt="">
-        <img src="img/ball.png" alt="">
-        <img src="img/github.png" alt="">
-        <img src="img/instagram.png" alt="">
-        <img src="img/in.png" alt="">
     </div>
 
     <footer>Copyright©2022 Фассалов Тимур. Design by Web</footer>
