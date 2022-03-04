@@ -70,7 +70,7 @@ nav {
 }
 
 /* Обо мне */
-.about_me {
+.about_me>h2{
     text-transform: uppercase;
     text-align: center;
     font-size: 28px;
@@ -83,13 +83,13 @@ nav {
     background: url(../img/titleLine.png) no-repeat center 100%;
 }
 
-.about_me_BWpic {
-    background: url(../img/random_man.png) no-repeat center;
-    height: 206px;
-    width: 206px;
+.about_me>img {
+    height: 25%;
+    width: 25%;
     margin-top: 50px;
-    margin-left: 42.5%;
-    border-radius: 50% / 50%;
+    display: block;
+    margin: 20px auto;
+    border-radius: 50%;
 }
 
 .about_me_content {
@@ -244,10 +244,9 @@ nav {
     margin: 36px 0px 40px 0px;
 }
 
-.casesPNG {
-    background-size: 100%: border: 4px solid #000;
-    background: url(../img/cases.png) no-repeat center;
-    height: 594px;
+.cases>img {
+    display: block;
+    margin: 20px auto;
 }
 
 .advertising {
@@ -333,10 +332,17 @@ nav {
 .prices div select {
     width: 100%;
     padding: 17px;
+    color: #737373;
+    font-weight: bold;
+    font-size: 14px;
     border-radius: 10px;
     background-color: #eeeeee;
     margin-top: 10px;
     margin-bottom: 10px;
+}
+
+.prices div option {
+    background-color: #eee;
 }
 
 .subtotal_line {
@@ -481,13 +487,14 @@ nav {
     color: #263244;
 }
 
-.smile_man {
-    background: url(../img/smileMan.png) no-repeat center;
+.feedback>img {
     height: 206px;
     width: 206px;
+    display: block;
+    margin: 20px auto;
     margin-top: 90px;
     margin-left: 42.5%;
-    border-radius: 50% / 50%;
+    border-radius: 50%;
 }
 
 .feedback_quote {
