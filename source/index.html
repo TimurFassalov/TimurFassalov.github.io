@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <title>Фассалов Тимур - Веб разработчик</title>
 </head>
 
@@ -16,63 +17,66 @@
             <div class="logo">Фассалов Тимур</div>
             <div class="menu">
                 <ul>
-                    <li>Обо мне</li>
-                    <li>Услуги</li>
-                    <li>Кейсы</li>
-                    <li>Прайс</li>
-                    <li>Отзывы</li>
-                    <li>Контакты</li>
+                    <li class="sss"><a href="#">Обо мне</a></li>
+                    <li><a href="#">Услуги</a></li>
+                    <li><a href="#">Кейсы</a></li>
+                    <li><a href="#">Прайс</a></li>
+                    <li><a href="#">Отзывы</a></li>
+                    <li><a href="#">Контакты</a></li>
                 </ul>
             </div>
         </nav>
     </header>
 
     <!-- Главная страница -->
-    <div class="main">
+    <section class="main">
         <div class="title_container">
             <h1>Привет <br>Я Фассалов Тимур</h1>
             <h4>Веб разработчик</h4>
-            <input type="submit" value="Обо мне">
-            <input type="submit" value="Мои работы">
+            <input type="button" value="Обо мне">
+            <input type="button" value="Мои работы">
         </div>
-    </div>
+    </section>
 
     <!-- Обо мне -->
-    <div class="about_me">
+    <section class="about_me">
         <h2>Обо мне</h2>
         <div class="about_me_line"></div>
         <img src="img/random_man_bw2.png" alt="">
         <p class="about_me_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur sapiente est nostrum debitis odio, suscipit fugiat porro, architecto adipisci dignissimos sunt et, ipsam ipsum velit. Vitae pariatur earum repudiandae corrupti.</p>
         <p class="about_me_content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus ipsam, odio eligendi in placeat aperiam natus aspernatur sunt iusto ducimus!</p>
         <div class="about_me_download">
-            <input type="submit" value="Скачать резюме">
+            <input type="button" value="Скачать резюме">
         </div>
-    </div>
+    </section>
 
     <!-- Что я умею -->
-    <div class="what_i_can">
+    <section class="what_i_can">
         <h2>Что я умею</h2>
-        <div class="what_i_can_line"></div>
         <div class="laptop">
+            <img src="img/laptop.png" alt="">
             <h3>Веб-дизайн</h3>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat.</div>
         </div>
         <div class="staples">
+            <img src="img/staples.png" alt="">
             <h3>Разработка</h3>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat.</div>
         </div>
         <div class="rocket">
+            <img src="img/rocket.png" alt="">
             <h3>CEO-Оптимизация</h3>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat.</div>
         </div>
         <div class="loudspeaker">
+            <img src="img/loudspeaker.png" alt="">
             <h3>Маркетинг</h3>
             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum, repellat.</div>
         </div>
-    </div>
+    </section>
 
     <!-- Кейсы -->
-    <div class="cases">
+    <section class="cases">
         <h2>Кейсы</h2>
         <div class="cases_line"></div>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem dolores, quo saepe a id cum.</p>
@@ -93,25 +97,25 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe repellat eaque totam, architecto delectus ipsum perspiciatis doloribus assumenda beatae modi voluptate, deleniti magni excepturi. Fuga, nobis quis saepe quam consectetur!</p>
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Рачёт стоимости -->
-    <div class="prices">
+    <section class="prices">
         <h2>Рачёт стоимости</h2>
         <div>
-            <h3>Тип сайта</h3>
+            <h3 tip="Существует множество видов сайтов и все они отличаются по сложности и структурности">Тип сайта</h3>
             <select name="" id="" placeholder="Введите">
                 <option value="option1" selected disabled hidden>Выберите пункт...</option>
                 <option value="option2">Визитка</option>
                 <option value="option3">Корпоративный</option>
             </select>
-            <h3>Дизайн</h3>
+            <h3 tip="Дизайн программного обеспечения - это процесс представления и определения программных решений для одного или нескольких наборов проблем.">Дизайн</h3>
             <select name="" id="">
                 <option value="option1" selected disabled hidden>Выберите пункт...</option>
                 <option value="option2">Минимализм</option>
                 <option value="option3">Красивая топографика</option>
             </select>
-            <h3>Адаптивность</h3>
+            <h3 tip="Адаптивность означает систему, которая автоматически адаптируется к своим пользователям в соответствии с изменяющимися условиями">Адаптивность</h3>
             <select name="" id="">
                 <option value="option1" selected disabled hidden>Выберите пункт...</option>
                 <option value="option2">Присутствует</option>
@@ -129,49 +133,56 @@
                 <input type="number" placeholder="0">
             </div>
         </div>
-    </div>
+    </section>
 
     <!-- Немного статистики -->
-    <div class="statistic">
+    <section class="statistic">
         <h2>Немного статистики</h2>
         <div class="smile">
+            <img src="img/smile.png" alt="">
             <h3>120</h3>
             <div>Счастливых клиентов</div>
         </div>
         <div class="orange_staples">
+            <img src="img/orangeStaples.png" alt="">
             <h3>4600</h3>
             <div>Часов работы</div>
         </div>
         <div class="check_mark">
+            <img src="img/checkMark.png" alt="">
             <h3>340</h3>
             <div>Проектов завершено</div>
         </div>
         <div class="cup">
+            <img src="img/cup.png" alt="">
             <h3>23</h3>
             <div>Наград получено</div>
         </div>
-    </div>
+    </section>
 
     <!-- Отзывы -->
-    <div class="feedback">
+    <section class="feedback">
         <h2>Отзывы</h2>
         <img src="img/smileMan.png" alt="">
         <div class="feedback_quote">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique eligendi inventore reprehenderit dolores ipsa. Rem reiciendis, debitis quod veniam illum maxime? Nesciunt vel maxime totam.</div>
         <div class="source"><b>Михаил, </b>Ген директор ПАО "Газпром".</div>
-    </div>
+    </section>
 
     <!-- Мои контакты -->
-    <div class="contacts">
+    <section class="contacts">
         <h2>Мои контакты</h2>
         <div class="under_contacts">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Asperiores ex fugiat alias aspernatur cumque rem, vitae, et quis natus facere!</div>
         <div class="connect">
             <div class="GEOmark">
+                <img src="img/GEOmark.png" alt="">
                 <div>Нижневартовск<br>ул. Мира</div>
             </div>
             <div class="envelope">
+                <img src="img/envelope.png" alt="">
                 <div>fassalovtimur@gmail.com</div>
             </div>
             <div class="phone">
+                <img src="img/phone.png" alt="">
                 <div>+7 999 999-99-99</div>
             </div>
         </div>
@@ -184,7 +195,7 @@
             <br>
             <input type="submit" placeholder="Отправить" class="send">
         </div>
-    </div>
+    </section>
 
     <footer>Copyright©2022 Фассалов Тимур. Design by Web</footer>
 </body>
