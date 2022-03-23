@@ -1,10 +1,11 @@
 @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
 
-boyd {
+body {
     height: 0%;
 }
 
 /*Шапка*/
+
 nav {
     width: 100%;
     height: 60px;
@@ -15,7 +16,6 @@ nav {
 
 nav > .container {
     height: 60px;
-    display: flex;
 }
 
 .menu ul {
@@ -342,7 +342,7 @@ i {
 
 /* Обо мне */
 .about_me .container {
-    height: 770px;
+    margin-bottom: 20px;
 }
 
 .about_me h2 {
@@ -359,7 +359,7 @@ i {
 }
 
 .about_me img {
-    height: 25%;
+    max-width: 30%;
     margin-top: 50px;
     display: block;
     margin: 20px auto;
@@ -412,12 +412,6 @@ i {
     transform: scale(1.1);
 }
 
-@media (max-width: 992px) {
-    .about_me img {
-        height: 17%;
-    }
-}
-
 
 /* Что я умею */
 .what_i_can {
@@ -429,7 +423,7 @@ i {
     text-transform: uppercase;
     text-align: center;
     font-size: 28px;
-    padding-top: 70px;
+    padding-top: 30px;
     color: #263244;
 }
 
@@ -441,7 +435,6 @@ i {
 .laptop {
     margin-top: 100px;
     text-align: center;
-    float: left;
     position: relative;
     z-index: 2;
 }
@@ -509,7 +502,6 @@ i {
 .staples {
     margin-top: 45px;
     text-align: center;
-    float: left;
     height: 300px;
     position: relative;
     z-index: 2;
@@ -604,10 +596,7 @@ i {
 }
 
 .rocket {
-    margin-top: 45px;
     text-align: center;
-    float: left;
-    position: relative;
     z-index: 2;
 }
 
@@ -666,10 +655,7 @@ i {
 }
 
 .loudspeaker {
-    margin-top: 45px;
     text-align: center;
-    float: left;
-    position: relative;
     z-index: 2;
 }
 
@@ -736,6 +722,16 @@ i {
     transition: all 0.35s 0.35s linear;
 }
 
+@media (max-width: 768px) {
+    .laptop {
+        height: 200px;
+    }
+
+    .staples {
+        height: 200px;
+    }
+}
+
 /* Кейсы */
 .cases {
     margin-top: 100px;
@@ -761,6 +757,7 @@ i {
 }
 
 .cases img {
+    max-width: 100%;
     display: block;
     margin: 0 auto;
     height: 100%;
@@ -777,63 +774,7 @@ i {
 }
 
 .cases .container:nth-child(4) {
-        margin-bottom: 20px;
-    }
-
-@media (min-width: 1401px) {
-    .cases img {
-        height: 110%;
-    }
-
-    .cases .container:nth-child(4) {
-        height: 660px;
-    }
-}
-
-@media (max-width: 1400px) {
-    .cases img {
-        height: 96%;
-    }
-
-    .cases .container:nth-child(4) {
-        height: 590px;
-    }
-}
-
-@media (max-width: 1200px) {
-    .cases img {
-        height: 80%;
-    }
-
-    .cases .container:nth-child(4) {
-        height: 490px;
-    }
-}
-
-@media (max-width: 992px) {
-    .cases img {
-        height: 60%;
-    }
-
-    .cases .container:nth-child(4) {
-        height: 370px;
-    }
-}
-
-@media (max-width: 768px) {
-    .cases img {
-        height: 45%;
-    }
-
-    .cases .container:nth-child(4) {
-        height: 290px;
-    }
-}
-
-@media (max-width: 576px) {
-    .cases img {
-        height: 47%;
-    }
+    margin-bottom: 20px;
 }
 
 .company > h3 {
@@ -937,10 +878,16 @@ i {
     margin-top: 15px;
 }
 
+@media (max-width: 768px) {
+    .project h2 {
+        margin-top: 20px;
+    }
+}
+
 /* Расчёт стоимости */
-.prices > .container{
-    margin-top: 80px;
-    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+.prices > .container {
+    margin-top: 50px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
     box-shadow: 1px;
 }
 
@@ -1059,11 +1006,11 @@ i {
     text-transform: uppercase;
     text-align: center;
     font-size: 28px;
-    padding-top: 50px;
+    padding-top: 30px;
     color: #263244;
 }
 
-.statistic .container:nth-child(2){
+.statistic .container:nth-child(2) {
     margin-top: 100px;
 }
 
@@ -1168,7 +1115,7 @@ i {
     transform: rotate(25deg) scale(1.2);
 }
 
-.cup {    
+.cup {
     text-align: center;
     position: relative;
     z-index: 2;
@@ -1258,6 +1205,64 @@ i {
     font-size: 16px;
 }
 
+@media (max-width: 768px) {
+    .smile {
+        margin-top: -40px;
+    }
+
+    .smile h3 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    .smile div {
+        color: #3f495a;
+        font-size: 16px;
+    }
+
+    .orange_staples {
+        margin-top: -40px;
+    }
+
+    .orange_staples h3 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    .orange_staples div {
+        color: #3f495a;
+        font-size: 16px;
+    }
+    
+    .check_mark {
+        margin-top: 20px;
+    }
+
+    .check_mark h3 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    .check_mark div {
+        color: #3f495a;
+        font-size: 16px;
+    }
+    
+    .cup {
+        margin-top: 20px;
+    }
+
+    .cup h3 {
+        padding-top: 20px;
+        padding-bottom: 5px;
+    }
+
+    .cup div {
+        color: #3f495a;
+        font-size: 16px;
+    }
+}
+
 /* Отзывы */
 
 .feedback {
@@ -1279,7 +1284,6 @@ i {
     display: block;
     margin: 20px auto;
     margin-top: 90px;
-    margin-left: 42.5%;
     border-radius: 50%;
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
@@ -1332,7 +1336,8 @@ i {
     margin-top: 100px;
     margin-bottom: 20px;
 }
-.contacts .container:nth-child(3){
+
+.contacts .container:nth-child(3) {
     margin-top: 20px;
 }
 
@@ -1351,7 +1356,7 @@ i {
     height: 100%;
 }
 
-.GEOmark img{
+.GEOmark img {
     margin: 0 auto;
 }
 
@@ -1359,7 +1364,7 @@ i {
     height: 100%;
 }
 
-.envelope img{
+.envelope img {
     margin: 0 auto;
 }
 
@@ -1367,7 +1372,7 @@ i {
     height: 100%;
 }
 
-.phone img{
+.phone img {
     margin: 0 auto;
 }
 
@@ -1518,7 +1523,7 @@ i {
     }
 }
 
-.message .container:nth-child(1){
+.message .container:nth-child(1) {
     margin-top: 30px;
 }
 
@@ -1580,3 +1585,14 @@ i {
     transform: scale(1.1);
 }
 
+/* Подвал */
+.container-fluid {
+    background-color: #354051;
+}
+
+footer {
+    height: 60px;
+    padding-top: 20px;
+    color: #fff;
+    text-align: center;
+}
