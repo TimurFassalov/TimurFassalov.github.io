@@ -159,6 +159,11 @@ i {
     width: 100%;
 }
 
+@media (max-width: 768px){
+    .title_container {
+        margin-top: 200px;
+    }
+}
 .title_container h1 {
     font-size: 60px;
     font-weight: bold;
@@ -360,6 +365,12 @@ i {
     -webkit-transition: all 1s ease;
     -o-transition: all 1s ease;
     transition: all 1s ease;
+}
+
+@media (max-width: 768px) {
+    .about_me img {
+        max-width: 50%;
+    }
 }
 
 .about_me img:hover {
@@ -716,6 +727,49 @@ i {
     transition: all 0.35s 0.35s linear;
 }
 
+@media (max-width: 768px) {
+
+    .laptop h3 {
+        opacity: 1;
+        top: 0px;
+    }
+
+    .laptop div {
+        opacity: 1;
+        top: 0px;
+    }
+
+    .staples h3 {
+        opacity: 1;
+        right: 0px;
+    }
+
+    .staples div {
+        opacity: 1;
+        left: 0px;
+    }
+
+    .rocket h3 {
+        opacity: 1;
+        right: 0px;
+    }
+
+    .rocket div {
+        opacity: 1;
+        left: 0px;
+    }
+
+    .loudspeaker h3 {
+        bottom: 0px;
+        opacity: 1;
+    }
+
+    .loudspeaker div {
+        bottom: 0px;
+        opacity: 1;
+    }
+}
+
 /* Кейсы */
 .cases {
     margin-top: 100px;
@@ -747,6 +801,10 @@ i {
     -webkit-transition: all 0.5s ease;
     -moz-transition: all 0.5s ease;
     transition: all 0.5s ease;
+}
+
+.minus {
+/*    padding: 0;*/
 }
 
 .cases .container:nth-child(4) {
@@ -926,7 +984,7 @@ i {
 
 [tip]::after {
     content: attr(tip);
-    font-size: 18px;
+    font-size: 14px;
     position: absolute;
     z-index: 2;
     width: 400px;
@@ -946,6 +1004,17 @@ i {
     opacity: 1;
     top: 33px;
     left: 45px;
+}
+
+@media (max-width: 768px) {
+    [tip]::after {
+        width: 200px;
+    }
+
+    [tip]:hover::after {
+        left: 0px;
+
+    }
 }
 
 .subtotal_line {
@@ -1282,6 +1351,12 @@ i {
     transition: all 1s ease;
 }
 
+@media (max-width: 768px) {
+    .feedback img {
+        max-width: 50%;
+    }
+}
+
 .feedback img:hover {
     -webkit-box-shadow: 0 0 50px rgba(210, 126, 0, 1);
     ;
@@ -1295,8 +1370,6 @@ i {
     text-align: center;
     color: #243042;
     font-size: 16px;
-    margin-left: 20%;
-    margin-right: 20%;
     margin-top: 20px;
 }
 
@@ -1597,14 +1670,6 @@ i {
         padding-top: 50px;
     }
 }
-
-/*
-@media (max-width: 1699px) {
-    .send {
-        margin-top: 50px;
-    }
-}
-*/
 
 /* Подвал */
 .container-fluid {
