@@ -749,6 +749,10 @@ i {
     transition: all 0.5s ease;
 }
 
+.cases .container:nth-child(4){
+    padding: 0;
+}
+
 .cases img:hover {
     border-radius: 340px 140px 340px 140px;
     -webkit-transition: all 0.5s ease;
